@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tabish Shah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syed Tabish Shah | AI & Machine Learning</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #1a1a1a; background: #fff; }
+  header { margin-bottom: 50px; }
+  h1 { font-size: 2.2em; margin-bottom: 4px; }
+  .subtitle { color: #555; font-size: 1.1em; margin-top: 0; }
+  .links a { margin-right: 14px; color: #0a66c2; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  section { margin-top: 50px; }
+  h2 { border-bottom: 2px solid #142824; padding-bottom: 6px; font-size: 1.5em; }
+  .project { background: #f7f8f8; border-radius: 8px; padding: 20px; margin-bottom: 22px; }
+  .project h3 { margin: 0 0 6px 0; }
+  .project .tag { display: inline-block; background: #142824; color: #fff; font-size: 0.75em; padding: 3px 8px; border-radius: 4px; margin-right: 6px; margin-bottom: 8px; }
+  .project a { color: #0a66c2; text-decoration: none; font-weight: 600; }
+  .stat-row { display: flex; gap: 30px; margin: 20px 0; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 1.8em; font-weight: bold; color: #142824; }
+  .stat .label { font-size: 0.85em; color: #666; }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 16px; }
+  .skills-grid h4 { margin-bottom: 6px; color: #142824; }
+  .cred { padding: 14px 0; border-bottom: 1px solid #eee; }
+  .cred .org { font-size: 0.85em; color: #666; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.85em; color: #777; text-align: center; }
+</style>
 </head>
 <body>
-  <h1>Tabish Shah</h1>
-  <p>CS Student | AI & Cybersecurity</p>
+
+<header>
+  <h1>Syed Tabish Shah</h1>
+  <p class="subtitle">Computer Science student at DHA Suffa University & AI Intern at Ora-Tech Systems. Exploring how machine learning, retrieval, and computer vision become useful software.</p>
+  <div class="links">
+    <a href="mailto:syedtabishshah8@gmail.com">Email ↗</a>
+    <a href="https://github.com/syedshah7490" target="_blank">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/syed-tabish-shah-11a664299" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.researchgate.net/profile/Syed-Shah-471" target="_blank">ResearchGate ↗</a>
+  </div>
+  <div class="stat-row">
+    <div class="stat"><div class="num">3</div><div class="label">AI Projects</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Live Azure Deployments</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Certifications</div></div>
+    <div class="stat"><div class="num">2027</div><div class="label">Expected Graduation</div></div>
+  </div>
+</header>
+
+<section>
+  <h2>Selected Work</h2>
+
+  <div class="project">
+    <span class="tag">COMPUTER VISION · LIVE ON AZURE</span>
+    <h3>Intel Scene Classifier</h3>
+    <p>A web application that classifies images into six scene categories, built around a fine-tuned MobileNetV3Small model and served through FastAPI. Includes Grad-CAM visual explanations for accepted predictions. Reported test accuracy: <strong>90.47%</strong>.</p>
+    <p>TensorFlow · FastAPI · Docker · Microsoft Azure</p>
+    <a href="https://intel-scene-classifier.proudcoast-4e665340.uaenorth.azurecontainerapps.io/" target="_blank">Try the live application ↗</a>
+  </div>
+
+  <div class="project">
+    <span class="tag">DOCUMENT INTELLIGENCE · LIVE ON AZURE</span>
+    <h3>Medical RAG Chatbot</h3>
+    <p>A source-grounded medical question-answering application built from WHO reference PDFs. Original implementation uses Oracle 26ai and Ollama; the live cloud version uses Gemini embeddings, Azure AI Search, and Gemini answer generation with source pages.</p>
+    <p>Oracle 26ai · Azure AI Search · Gemini · Streamlit · Docker</p>
+    <a href="https://medical-rag-assistant.proudcoast-4e665340.uaenorth.azurecontainerapps.io/" target="_blank">Try live app ↗</a>
+  </div>
+
+  <div class="project">
+    <span class="tag">AI-ASSISTED WORKFLOWS · LIVE ON AZURE</span>
+    <h3>AI Crime Investigation System</h3>
+    <p>An experimental case-management and evidence-analysis application using YOLOv8 object detection. FastAPI backend and React interface support evidence uploads, annotated results, timelines, reports, and chain-of-custody workflows. CI/CD pipeline via GitHub Actions builds, scans with Trivy, and deploys to Azure via passwordless OIDC.</p>
+    <p>Python · YOLOv8 · FastAPI · React · Docker · GitHub Actions · Azure OIDC</p>
+    <a href="https://csi-investigation.proudcoast-4e665340.uaenorth.azurecontainerapps.io/" target="_blank">Try the live application ↗</a>
+  </div>
+</section>
+
+<section>
+  <h2>About & Toolkit</h2>
+  <p>My work spans Python-based machine learning, retrieval-augmented generation, computer vision, and API development. Deploying all three projects with Docker and Azure — and automating the CSI release workflow with GitHub Actions — has connected model development, cloud retrieval, application design, and production delivery.</p>
+
+  <div class="skills-grid">
+    <div><h4>Language & Data</h4><p>Python, SQL, NumPy, Pandas</p></div>
+    <div><h4>Machine Learning</h4><p>TensorFlow, scikit-learn, OpenCV, YOLO</p></div>
+    <div><h4>Retrieval & APIs</h4><p>RAG, Vector embeddings, Oracle 26ai, Azure AI Search</p></div>
+    <div><h4>Development & Cloud</h4><p>Git, GitHub Actions, Docker, CI/CD, Trivy, Azure Container Apps</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Education & Experience</h2>
+  <p><strong>BS Computer Science</strong> — DHA Suffa University, Karachi<br>AI & Data Science specialization · Expected graduation 2027</p>
+  <p><strong>AI Intern</strong> — Ora-Tech Systems<br>August 2026 – Present · Building practical AI workflows, including a RAG chatbot using Oracle 26ai, document embeddings, and a language model API.</p>
+</section>
+
+<section>
+  <h2>Credentials</h2>
+  <div class="cred">
+    <strong>Azure AI Fundamentals</strong>
+    <div class="org">Microsoft · December 2024</div>
+    <a href="https://syed-tabish-shah.syedtabishshah8.chatgpt.site/assets/azure-ai-fundamentals.pdf" target="_blank">View certificate ↗</a>
+  </div>
+  <div class="cred">
+    <strong>Introduction to Artificial Intelligence with Python</strong>
+    <div class="org">Harvard CS50 · 2026</div>
+    <a href="https://syed-tabish-shah.syedtabishshah8.chatgpt.site/assets/cs50-ai.pdf" target="_blank">View certificate ↗</a>
+  </div>
+  <div class="cred">
+    <strong>Agentic AI Certified Foundations Associate</strong>
+    <div class="org">Oracle · September 2026</div>
+    <a href="https://syed-tabish-shah.syedtabishshah8.chatgpt.site/assets/oracle-agentic-ai.pdf" target="_blank">View certificate ↗</a>
+  </div>
+</section>
+
+<section>
+  <h2>Get in Touch</h2>
+  <p>For AI project conversations, internships, and opportunities to learn.</p>
+  <div class="links">
+    <a href="mailto:syedtabishshah8@gmail.com">syedtabishshah8@gmail.com ↗</a>
+    <a href="https://www.linkedin.com/in/syed-tabish-shah-11a664299" target="_blank">LinkedIn ↗</a>
+    <a href="https://github.com/syedshah7490" target="_blank">GitHub ↗</a>
+    <a href="https://www.researchgate.net/profile/Syed-Shah-471" target="_blank">ResearchGate ↗</a>
+  </div>
+</section>
+
+<footer>© 2026 Syed Tabish Shah — Karachi, Pakistan</footer>
+
 </body>
 </html>
